@@ -14,10 +14,10 @@
         android:theme="@style/Theme.ExamProject"
         tools:targetApi="31">
         <activity
-            android:name=".Page3"
+            android:name=".CoustomizePage"
             android:exported="false" />
         <activity
-            android:name=".Page2"
+            android:name=".Page3"
             android:exported="false" />
         <activity
             android:name=".MersedesBenz"
