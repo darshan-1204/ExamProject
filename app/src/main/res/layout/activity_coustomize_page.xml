@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CoustomizePage">
 
+    <!--    Arrow Back Button-->
     <RelativeLayout
         android:id="@+id/header2"
         android:layout_width="match_parent"
@@ -13,12 +14,17 @@
         android:layout_marginTop="5dp">
 
         <ImageView
+            android:id="@+id/back_arrow2"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:src="@drawable/ic_arrow_back_24" />
     </RelativeLayout>
 
+    <!--    Customize-->
     <RelativeLayout
         android:id="@+id/customise"
         android:layout_width="match_parent"
@@ -40,24 +46,94 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="Interior"
             android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
+            android:text="Interior"
             android:textSize="18dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:textColor="#000"
-            android:text="Exterior"
-            android:layout_toLeftOf="@+id/interior"
             android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toLeftOf="@+id/interior"
             android:background="@drawable/border"
             android:padding="7dp"
-            android:layout_marginEnd="12dp"/>
+            android:text="Exterior"
+            android:textColor="#000"
+            android:textSize="18dp" />
 
     </RelativeLayout>
 
+    <!--    Car Image-->
+    <RelativeLayout
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/customise">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/merce3" />
+
+
+    </RelativeLayout>
+
+    <!--    Wheels text-->
+    <RelativeLayout
+        android:id="@+id/wheels"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Wheels"
+            android:textColor="#010101"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:text="20° Silver Wheels"
+            android:textColor="#010101"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+<!--    Recycler View-->
+    <RelativeLayout
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/wheels"
+        android:layout_margin="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#010101"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#f2f2f2"
+            android:text="Save Changes"
+            app:cornerRadius="10dp"/>
+    </RelativeLayout>
 </RelativeLayout>

@@ -11,28 +11,27 @@
         android:id="@+id/btn1"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:cornerRadius="20dp"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#1E88E5"
-        android:text="Button 1"/>
+        android:text="About Car"
+        app:cornerRadius="150dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn2"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_centerVertical="true"
-        app:cornerRadius="20dp"
+        android:layout_centerInParent="true"
         android:backgroundTint="@color/teal_700"
-        android:layout_centerHorizontal="true"
-        android:text="Button 2"/>
+        android:text="Customize"
+        app:cornerRadius="150dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:cornerRadius="20dp"
+        app:cornerRadius="150dp"
         android:backgroundTint="#FB8C00"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Button 3" />
+        android:text="Payment Details" />
 </RelativeLayout>

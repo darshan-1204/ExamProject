@@ -72,7 +72,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/car"
+                android:background="@drawable/merce"
                 android:scaleType="centerCrop" />
 
         </RelativeLayout>
@@ -240,8 +240,8 @@
 
         <!--    mercedes logo-->
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_below="@+id/car_img"
             android:layout_centerHorizontal="true"
             android:src="@drawable/img" />
